@@ -2,23 +2,37 @@
 body {
     background-color: #151948;
     font-family: 'Press Start 2P', cursive;
-    color:white;
+    color: white;
     overflow: hidden;
     margin: 0px;
     padding: 0px;
 }
 
-startbutton, player, enemy, explosion, planet, star, background {
+startbutton, player, enemy, explosion, planet, star, background, bullet {
     position: absolute;
     display: block;
     box-sizing: border-box;
     background-repeat: no-repeat;
 }
 
+explosion {
+    background-image: url(../images/explosion.png);
+    width: 100px;
+    height: 100px;
+    background-size: 100% 100%;
+}
+
 startbutton {
     font-size: 3em;
-    transform:translate(35vw, 36vh);
+    transform: translate(35vw, 36vh);
     cursor: pointer;
+}
+
+bullet {
+    background-image: url(../images/bullet.png);
+    width: 40px;
+    height: 15px;
+    background-size: 100% 100%;
 }
 
 player {
@@ -31,12 +45,6 @@ enemy {
     background-image: url(../images/enemy_red.png);
     width: 101px;
     height: 100px;
-}
-
-explosion {
-    background-image: url(../images/bubble.png);
-    width: 55px;
-    height: 55px;
 }
 
 background {
