@@ -8,6 +8,7 @@ Deze week gaan we een game maken waarbij je kan schieten en explosies laten onts
 - Hoe kunnen we objecten verwijderen uit de game?
 - Geluid en muziek maakt de game veel leuker!
 
+## Links
 
 - [Speech](https://github.com/HR-CMGT/PRG08-2020-2021/blob/main/snippets/speech.md)
 - [Collision detection](https://github.com/HR-CMGT/Typescript/blob/master/snippets/collision.md)
