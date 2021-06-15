@@ -17,6 +17,7 @@ De [Speech API](https://github.com/HR-CMGT/PRG08-2020-2021/blob/main/snippets/sp
 
 ```typescript
 let synth = window.speechSynthesis
+let voice = "Alex (en-US)"
 
 function speak(text) {
     if (synth.speaking) {
@@ -25,6 +26,7 @@ function speak(text) {
     }
     if (text !== '') {
         let utterThis = new SpeechSynthesisUtterance(text)
+        utterThis.voice = this.voice
         synth.speak(utterThis)
     }
 }
@@ -34,6 +36,8 @@ Het eindresultaat zou als volgt kunnen werken:
 let assistant = new Speech()
 assistant.speak("One falafel please")
 ```
+
+> De beschikbare voices kan je opvragen via `getVoices()`. Dit verschilt per apparaat. [Zie dit voorbeeld](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/getVoices).
 
 <br>
 <br>
