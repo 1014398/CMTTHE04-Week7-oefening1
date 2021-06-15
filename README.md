@@ -34,6 +34,8 @@ Het eindresultaat zou als volgt kunnen werken:
 let assistant = new Speech()
 assistant.speak("One falafel please")
 ```
+Je kan [deze codepen](https://codepen.io/eerk/pen/OJprpeL?editors=0010) gebruiken om te oefenen.
+
 ### Voices
 
 Je kan de `voice` ook een property van de class maken:
