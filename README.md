@@ -123,9 +123,9 @@ this.game.switchScreen(newScreen)
 
 <br>
 
-## DOM Objecten verwijderen
+## Screens moeten hun eigen DOM objecten verwijderen
 
-Om zeker te weten dat alle DOM elementen verwijderd worden moet elk scherm een `remove` functie hebben. In gamescreen wordt dit gebruikt om alle robots te verwijderen. Roep ook `super.remove()` aan om de gamescreen div te verwijderen.
+Elk scherm krijgt een `remove` functie om al zijn eigen objecten te verwijderen. Daarna roep je `super.remove()` aan. Daarin staat `this.element.remove()`, dus dan wordt het DOM element van het scherm zelf ook verwijderd.
 
 ```typescript
 public remove() {
