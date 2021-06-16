@@ -1,18 +1,17 @@
 import { GameObject } from "./gameobject.js"
-import { Robot } from "./robot.js"
-import { Startscreen } from "./startscreen.js"
+import { GameScreen } from "./gamescreen.js"
 
 export class Game {
 
-    robot:Robot
+    private screen:GameScreen
 
     constructor(){
-        this.robot = new Robot(this)
+        this.screen = new GameScreen()
         this.gameLoop()
     }
 
     private gameLoop(){
-        this.robot.update()
+        this.screen.update()
         requestAnimationFrame(()=>this.gameLoop())
     }
 }

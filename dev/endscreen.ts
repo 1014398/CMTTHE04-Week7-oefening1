@@ -1,8 +1,7 @@
 import { GameObject } from "./gameobject.js"
 import { Game } from "./game.js"
-import { Startscreen } from "./startscreen.js"
 
-export class Endscreen extends GameObject {
+export class EndScreen extends GameObject {
 
     constructor(game: Game) {
         super("endscreen")

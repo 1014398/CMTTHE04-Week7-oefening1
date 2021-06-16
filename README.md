@@ -14,7 +14,7 @@
 
 De [Speech API](https://github.com/HR-CMGT/PRG08-2020-2021/blob/main/snippets/speech.md) heeft een eigenschap `synth` en een function `speak`. Hoe kunnen we hier een class van maken?
 
-Gebruik hiervoor het [typescript startproject](https://github.com/HR-CMGT/Typescript-startproject), of je kan op [CodePen](https://codepen.io) een Typescript project starten. 
+Je kan dit in een bestaand project plakken, of maak een projectje aan op [CodePen](https://codepen.io). 
 
 ```typescript
 let synth = window.speechSynthesis
@@ -35,10 +35,6 @@ Het eindresultaat zou als volgt kunnen werken:
 let assistant = new Speech()
 assistant.speak("One falafel please")
 ```
-Je kan [deze codepen](https://codepen.io/eerk/pen/OJprpeL?editors=0010) gebruiken om te oefenen.
-
-### Voices
-
 Je kan de `voice` ook een property van de class maken:
 ```typescript
 let voices = window.speechSynthesis.getVoices();
@@ -57,7 +53,7 @@ De beschikbare voices op jouw apparaat kan je [hier checken](https://developer.m
 
 # Verwijderen van objecten
 
-In de `gamescreen` van dit project zitten een aantal clickable robots. Deze worden geupdate via een Array. Als je op de robot klikt krijg je een punt, en de robot verdwijnt uit het spel. Om de robot te laten verdwijnen moeten we:
+In de `gamescreen` van deze repository zitten een aantal clickable robots. Deze worden geupdate via een Array. Als je op de robot klikt krijg je een punt, en de robot verdwijnt uit het spel. Om de robot te laten verdwijnen moeten we:
 
 - Robot DOM element verwijderen.
 - Robot instance verwijderen uit de Array, zodat de `update()` niet meer wordt aangeroepen.

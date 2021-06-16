@@ -1,6 +1,5 @@
 import { GameObject } from "./gameobject.js"
 import { Game } from "./game.js"
-import { Gamescreen } from "./gamescreen.js"
 
 export class Startscreen extends GameObject {
     
