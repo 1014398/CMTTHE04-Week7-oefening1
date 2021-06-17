@@ -14,7 +14,7 @@
 
 De [Speech API](https://github.com/HR-CMGT/PRG08-2020-2021/blob/main/snippets/speech.md) heeft een eigenschap `synth` en een function `speak`. Hoe kunnen we hier een class van maken?
 
-Je kan dit in een bestaand project plakken, of maak een projectje aan op [CodePen](https://codepen.io). 
+Je kan dit oefenen in deze [CodePen](https://codepen.io/eerk/pen/OJprpeL) (Maak eerst een `fork` voordat je gaat wijzigen).
 
 ```typescript
 let synth = window.speechSynthesis
